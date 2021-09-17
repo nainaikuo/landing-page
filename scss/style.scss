@@ -1,0 +1,213 @@
+$color-main:#0453ED;
+$color-gray:#494949;
+$color-dark:#494949;
+
+body{
+    width: 1200px;
+    margin:0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: initial;
+}
+ul{
+    list-style: none;
+}
+button{
+    background: $color-main;
+    width: 170px;
+    height: 60px;
+    box-sizing: border-box;
+    padding:15px 25px;
+    border: none;
+    border-radius:10px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.title{
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 119px;
+    h3{
+        font-size: 36px;
+        font-weight: blod;
+        &::after{
+            content: "";
+            width: 55px;
+            height: 5px;
+            position: absolute;
+            bottom:20px;
+            left:0;
+            background: $color-main;
+        }
+    }
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    padding:20px 10px;
+    margin-bottom: 117px;
+    img{
+        width: 200px;
+        height: 40px;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        li a{
+            color:#000;
+            font-size: 20px;
+            margin-left: 10px;
+            font-weight: 400;
+        }
+    }
+}
+
+.banner{
+    display: flex;
+    margin-bottom: 117px;
+    .banner-l{
+        padding:25px;
+        h3{
+            font-size: 48px;
+            font-weight: 600;
+            margin: 30px 0;
+        }
+        p{
+            margin: 0;
+            font-size: 20px;
+            color:$color-gray;
+            letter-spacing: 10%;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+        
+    }
+    .banner-r{
+        img{
+            width: 691px;
+        }
+    }
+}
+
+.classroom{
+    margin-bottom: 119px;
+    .card{
+        display: flex;
+        justify-content: space-between;
+        margin-top:100px;
+        .item{
+            width: 30%;
+            border-radius: 10px;
+            box-shadow: 4px 4px 8px #656565;
+            img{
+                width: 100%;
+            }
+            h4{
+                text-align: center;
+                font-size: 36px;
+                font-weight: blod;
+            }
+        }
+    }
+}
+.service{
+    margin-bottom: 178px ;
+    .card{
+        display: flex;
+        justify-content: space-around;
+        .item{
+            background: $color-main;
+            text-align: center;
+            color:#FFF;
+            width: 23%;
+            border-radius: 10px;
+            padding:40px;
+            box-sizing: border-box;
+            i{
+                font-size: 80px;
+            }
+            h4{
+                font-size: 36px;
+                font-weight: 700;
+                margin-bottom: 0;
+            }
+            p{
+
+            }
+        }
+    }
+}
+
+.detail{
+    .content{
+        display: flex;
+        margin-bottom: 80px;
+        .text{
+            padding:100px;
+            
+            h4{
+                font-size: 36px;
+                font-weight: 700;
+                position: relative;
+                margin-bottom: 80px;
+                &::after{
+                    content: "";
+                    width: 55px;
+                    height: 5px;
+                    position: absolute;
+                    bottom:-30px;
+                    left:0;
+                    background: $color-main;
+                }
+            }
+            p{
+                font-size: 20px;
+                color: $color-gray;
+                letter-spacing: 1px;
+                line-height: 1.5;
+            }
+            
+        }
+    }
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background: $color-dark;
+    padding: 80px;
+    color:#FFF;
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        li a{
+            color:#FFF;
+            font-size: 20px;
+        }
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        p{
+            line-height:1.8;
+            letter-spacing: 2px;
+            font-size: 20px;
+        }
+        p:nth-child(1),p:nth-child(2){
+
+            margin-bottom: 50px;
+        }
+    }
+}
